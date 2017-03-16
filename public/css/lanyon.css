@@ -33,6 +33,10 @@
  *
  * Update the foundational and global aspects of the page.
  */
+ 
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
 
 /* Prevent scroll on narrow devices */
 html,
@@ -40,12 +44,13 @@ body {
   overflow-x: hidden;
 }
 
+/* font-family: "PT Serif", Georgia, "Times New Roman", serif; */
 html {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  font-family: Merriweather, 'Nanum Myeongjo', serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+
   font-weight: 400;
   color: #313131;
   letter-spacing: -.025rem;
@@ -148,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 14rem;
   visibility: hidden;
   overflow-y: auto;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+
   font-size: .875rem; /* 15px */
   color: rgba(255,255,255,.6);
   background-color: #202020;
@@ -157,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 30em) {
   .sidebar {
-    font-size: .75rem; /* 14px */
+    font-size: .6rem; /* 14px */
   }
 }
 
@@ -368,7 +373,6 @@ a.sidebar-nav-item:focus {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
   color: #ccc;
   text-align: center;
 }
@@ -561,3 +565,4 @@ a.pagination-item:hover {
 .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
 }
+
