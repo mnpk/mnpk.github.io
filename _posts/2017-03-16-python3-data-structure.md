@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Python3의 흥미로운 데이터 구조들
-published: false
 ---
 > 이 글은 [python reddit](https://www.reddit.com/r/Python/comments/5zfsq4/new_interesting_data_structures_in_python_3/)에서 발견한 [글](https://github.com/topper-123/Articles/blob/master/New-interesting-data-types-in-Python3.rst)의 한글 번역입니다.
 
