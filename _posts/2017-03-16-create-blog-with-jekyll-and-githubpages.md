@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GitHubPages + Jekyll 블로그 만들기
+title: GitHub Pages 와 Jekyll 블로그 만들기
 ---
 
 > 오늘 배우지만 내일 잊고 기억을 더듬을 모레를 위해 사적인 아카이브를 만든다. 첫 번째 기록으로 이 곳을 만드는 과정을 남긴다.
@@ -11,7 +11,6 @@ title: GitHubPages + Jekyll 블로그 만들기
 [GitHubPages](https://pages.github.com/)는 Github 저장소의 내용을 웹 페이지로 서비스해주는 기능이다.
 무료로 웹 서비스를 호스팅할 수 있지만 고정된 컨텐츠만 보여줄 수 있다.
 [Jekyll](https://jekyllrb-ko.github.io/) 이라는 정적 사이트 생성기와 결합되어 컨텐츠를 올리면 자동으로 사이트를 생성하여 서비스할 수 있다.
-
 
 ## 저장소 생성
 GitHub에서 `<username>.github.io` 이름으로 빈 repo를 만든다.
