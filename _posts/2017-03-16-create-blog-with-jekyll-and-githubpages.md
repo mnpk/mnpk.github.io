@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GitHub Pages 와 Jekyll 블로그 만들기
+title: GitHub Pages 와 Jekyll로 블로그 만들기
 ---
 
 > 오늘 배우지만 내일 잊고 기억을 더듬을 모레를 위해 사적인 아카이브를 만든다. 첫 번째 기록으로 이 곳을 만드는 과정을 남긴다.
