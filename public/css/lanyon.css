@@ -34,8 +34,10 @@
  * Update the foundational and global aspects of the page.
  */
  
+/* import web fonts
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700);
 @import url(https://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+*/
 
 
 /* Prevent scroll on narrow devices */
@@ -44,9 +46,10 @@ body {
   overflow-x: hidden;
 }
 
-/* font-family: "PT Serif", Georgia, "Times New Roman", serif; */
+
 html {
-  font-family: Merriweather, 'Nanum Myeongjo', serif;
+  /* font-family: "PT Serif", Georgia, "Times New Roman", serif;*/
+  /* font-family: Merriweather, 'Nanum Myeongjo', serif; */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -162,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 30em) {
   .sidebar {
-    font-size: .6rem; /* 14px */
+    font-size: .75rem; /* 14px */
   }
 }
 
