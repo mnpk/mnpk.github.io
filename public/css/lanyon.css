@@ -320,6 +320,10 @@ a.sidebar-nav-item:focus {
   margin-bottom: 4em;
 }
 
+.post-list-title {
+   margin-bottom: 2em;
+}
+
 /* Blog post or page title */
 .page-title,
 .post-title,
