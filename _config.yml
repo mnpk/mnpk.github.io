@@ -21,4 +21,6 @@ author:
 version:             1.0.0
 
 # gem required
-gems: [jekyll-paginate]
+gems:
+  - jekyll-feed
+  - jekyll-paginate
