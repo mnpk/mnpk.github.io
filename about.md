@@ -8,5 +8,5 @@ title: About
 
 - Jeju, South Korea
 - mnncat@gmail.com
-- https://github.com/mnpk
-- https://www.facebook.com/mnpkf
+- [https://github.com/mnpk](https://github.com/mnpk)
+- [https://www.facebook.com/mnpkf](https://www.facebook.com/mnpkf)
