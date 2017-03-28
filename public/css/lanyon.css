@@ -320,8 +320,24 @@ a.sidebar-nav-item:focus {
   margin-bottom: 4em;
 }
 
-.post-list-title {
+.post-list-wrapper {
    margin-bottom: 2em;
+}
+
+.post-list-date {
+  float: left;
+  color: #9a9a9a;
+  font-size: 0.85em;
+  font-style: italic;
+}
+
+.post-list-title {
+  margin-left: 120px;
+  margin-bottom: 2em;
+  text-rendering: optimizeLegibility;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
+   
 }
 
 /* Blog post or page title */
@@ -361,7 +377,7 @@ a.sidebar-nav-item:focus {
   color: #999;
 }
 .related-posts li a:hover {
-  color: #268bd2;
+  /*color: #268bd2; */
   text-decoration: none;
 }
 .related-posts li a:hover small {
