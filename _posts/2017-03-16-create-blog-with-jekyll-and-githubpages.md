@@ -23,7 +23,6 @@ jekyll을 설치하고
 
 ```
 gem install jekyll
-
 ```
 
 빌드, 실행
