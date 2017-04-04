@@ -46,9 +46,8 @@ YAML 포맷으로 간단하게 설정하고 룰만 지정하면 바로 동작합
 ```
 $ pip install elastalert
 ```
-끝
 
-...사실 내가 설치한 서버는 python 2,7, 3.5 두 가지가 설치되어 있고, elastalert는 python2, 연동하려는 elasticsearch가  5.x 버전이라 약간 섬세함이 필요했습니다.
+제가 설치한 서버는 python 2,7, 3.5 두 가지가 설치되어 있고, elastalert는 python2, 연동하려는 elasticsearch가  5.x 버전이라 약간 섬세함이 필요했습니다.
 
 ```
 $ pip-2.7 install elasicsearch>=5.0.0
