@@ -1,0 +1,20 @@
+---
+layout: default
+title: Archive
+---
+<div class="posts">
+  {% for post in site.posts %}
+  {% if post.layout == "presentation" %}
+    <div class="post-list-wrapper">
+      <div class="post-list-date">
+        {{ post.date | date_to_string }}
+      </div>
+      <div class="post-list-title">
+        <a href="{{ post.url }}">
+          {{ post.title }}
+        </a>    
+      </div>
+    </div>
+  {% endif %}
+  {% endfor %}
+</div>
