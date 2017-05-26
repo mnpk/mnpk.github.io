@@ -35,9 +35,9 @@
  */
  
 /* import web fonts
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700);
 @import url(https://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 */
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400italic,700);
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 
 /* Prevent scroll on narrow devices */
@@ -50,7 +50,7 @@ body {
 html {
   /* font-family: "PT Serif", Georgia, "Times New Roman",  serif;*/
   /* font-family: Merriweather, 'Nanum Myeongjo', serif; */
- font-family: "Noto Sans", sans-serif;
+ font-family: "Merriweather Sans", "Noto Sans", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
