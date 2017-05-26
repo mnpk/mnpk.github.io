@@ -106,6 +106,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 1rem;
   margin-bottom: 3rem;
   border-bottom: 1px solid #eee;
+  min-height: 4rem;
 }
 .masthead-title {
   margin-top: 0;
@@ -128,9 +129,18 @@ h1, h2, h3, h4, h5, h6 {
  font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
 
+.site-nav a + a {
+ margin-left: 1rem;
+}
+
 .masthead nav a {
  color: #505050;
 }
+
+.masthead nav a:hover {
+  text-decoration: underline;
+}
+
 
   
 @media (max-width: 48em) {
