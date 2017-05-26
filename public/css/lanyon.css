@@ -147,9 +147,14 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 48em) {
   .masthead-title {
     text-align: center;
+    float: none;
   }
   .masthead-title small {
     display: none;
+  }
+  .masthead .site-nav {
+    text-align: center;
+    float: none;
   }
 }
 
@@ -358,8 +363,11 @@ a.sidebar-nav-item:focus {
   margin-bottom: 2em;
   text-rendering: optimizeLegibility;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  font-size: 1.1em;
-   
+  font-size: 1.1em;  
+}
+
+.post-list-preview {
+  font-size: 0.85em;
 }
 
 /* Blog post or page title */
