@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title | strip_html }}</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body {
+        font-family: 'Noto Sans';
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      h1, h2, h3 {
+        font-family: 'Noto Sans';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono';}
+      .remark-code-line {
+         min-height: 1.2em;
+      }
+      .remark-code-line-highlighted     { background-color: #373832; }
+      .inverse {
+        background: #272822;
+        color: #dddddd;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+      code {
+        border-radius: 5px;
+        color: #f92672;
+      }
+      .hljs-monokai .hljs {
+        background: #070802;
+      }
+      li p { line-height: 1.25em; }
+      .red { color: #fa0000; }
+      .large { font-size: 2em; }
+      a, a > code {
+        color: rgb(102, 217, 239);
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+{{ content }}
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create({
+          highlightStyle: 'monokai',
+          highlightLanguage: 'remark',
+          highlightLines: true
+        });
+    </script>
+  </body>
+</html>
