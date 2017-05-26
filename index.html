@@ -14,7 +14,9 @@ title: Archive
           {{ post.title }}
         </a>    
       </div>
-       {{ post.content | strip_html | truncatewords:75}}<br>
+      <div class="post-list-preview">
+        {{ post.content | strip_html | truncatewords:35}}<br>
+      </div>
     </div>
   {% endif %}
   {% endfor %}
