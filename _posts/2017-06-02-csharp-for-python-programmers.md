@@ -3,8 +3,9 @@ layout: post
 title: C# for Python Programmers
 ---
 
-# C# for Python Programmers
-Python을 주 언어로 사용해오다가 앞으로 C#도 필요하게 되어 Python을 기준으로 C#이 다른 점들을 정리해본다.
+# 파이썬 프로그래머를 위한 C#
+
+한동안 Python을 주 언어로 사용해오다가 앞으로 C#도 필요하게 되어 Python을 기준으로 C#이 다른 점들을 정리해보았다.
 
 
 # Hello World
