@@ -4,9 +4,10 @@ title: C# for Python Programmers
 ---
 
 # C# for Python Programmers
+Python을 주 언어로 사용해오다가 앞으로 C#도 필요하게 되어 Python을 기준으로 C#이 다른 점들을 정리해본다.
 
 
-## Hello World
+# Hello World
 Python
 ```python
 if __name__ == "__main__":
@@ -25,9 +26,9 @@ class Hello
 }
 ```
 
-## 기본 문법
+# 기본 문법
 
-### 블럭, 구문 구분
+## 블럭, 구문 구분
 Python은 줄바꿈이 곧 구문 구분이고 들여쓰기로 블럭을 구분한다.
 ```python
 def func():
@@ -48,7 +49,7 @@ public void func()
 }
 ```
 
-### 코멘트
+## 코멘트
 Python은 #으로 코멘트한다. '''을 이용해 여러 줄을 코멘트할 수 있다.
 ```python
 # comment
@@ -72,7 +73,7 @@ int answer = 42 /* mid-line comment */;
 ```
 
 
-### 타입 지정
+## 타입 지정
 ```python
 # 함수 리턴 타입, 인자 타입 지정 없음
 def concat(first, second):
@@ -107,9 +108,9 @@ var answer = "42";
 var result = Concat(question, answer);
 ```
 
-### 흐름 제어
+## 흐름 제어
 
-#### `if`
+### if
 Python
 ```python
 if question is not "" and answer is "42":
@@ -130,7 +131,7 @@ else
 }
 ```
 
-#### `for`
+### for
 Python
 ```python
 for i in range(0, 10):
@@ -153,7 +154,7 @@ foreach (var item in items)
 }
 ```
 
-#### `exception`
+### exception
 
 Python
 ```python
@@ -185,7 +186,7 @@ finally
 }
 ```
 
-## Array, List, Tuple, Dictionary
+# Array, List, Tuple, Dictionary
 
 Python은 배열을 잘 사용하지 않고 list를 사용한다
 ```python
@@ -242,7 +243,7 @@ Dictionary<int, string> tempDict = new Dictionary<int, string>
 ```
 
 
-## Class, Interface
+# Class, Interface
 
 Python Class
 ```python
@@ -347,7 +348,7 @@ class DerivedClass : BaseClass
 ```
 
 
-## Structure
+# Structure
 C#에는 class와 구분되는 struct가 있다.
 ```cs
 public struct CoOrds
@@ -368,7 +369,7 @@ public struct CoOrds
 
 구조체는 값 형식(value type)이다.
 
-## Value Types vs. Reference Types
+# Value Types vs. Reference Types
 
 값 형식을 기반으로 한 변수에는 값이 직접 포함된다. 값 형식 변수 하나를 다른 변수에 대입하면 값 자체의 복사가 일어난다. 참조 형식 변수의 경우 참조만 복사되는 것과 대비된다.
 
@@ -415,7 +416,7 @@ class TestBoxing
 */
 ```
 
-## property
+# Property
 Python은 `property`라는 built-in function을 제공한다.
 ```python
 class C:
@@ -487,7 +488,7 @@ class C
 ```
 
 
-## Lambda
+# Lambda
 Python의 Lambda는 `lambda` 키워드를 사용한다.
 ```python
 items = [10, 15, 5]
@@ -500,7 +501,7 @@ C#의 Lambda는 `=>` 연산자를 사용한다.
 ```
 
 
-## Delegate
+# Delegate
 Python에서는 추가적인 코드 없이 함수를 인자로 넘기거나 리턴으로 넘길 수 있다.
 ```python
 def my_adder(x, y):
@@ -531,7 +532,7 @@ public int Executor(Func func, int arg1, int arg2)
 Executor(new Func(MyAdder), 1, 2);
 ```
 
-## `out`, `ref` Parameter
+# `out`, `ref` Parameter
 C#에서는 `out`, `ref` 키워드로 매개변수를 참조로 전달할 수 있다. 함수 내에서 해당 매개변수의 값을 변경 혹은 할당하고 그 내용을 호출한 쪽에서 유지할 수 있다.
 
 ```cs
@@ -556,7 +557,7 @@ Setter(out value);
 // value == 1
 ```
 
-## Named Parameter (Keyword Argument)
+# Named Parameter (Keyword Argument)
 
 Python은 keyword argement를 지원한다. 이 기능을 통해 가독성을 향상시킬 수 있고, 선택적으로 매개 변수를 전달할 수 있다.
 
@@ -613,7 +614,7 @@ public int CalcBMI(int weight = 60, int height = 180)
 int bmi = CalcBMI(height: 185);
 ```
 
-## `import` vs. `using`
+# `import` vs. `using`
 Python은 폴더, 파일 단위가 패키지, 모듈이 되고 그대로 namespace를 구성한다. 패키지와 모듈은 `import`, `from ... import ...` 형태로 불러온다.
 
 ```python
@@ -644,7 +645,7 @@ using SampleNamespace;
 SampleClass.Method();
 ```
 
-## Generator, IEnumerable
+# Generator, IEnumerable
 Python은 `yield` 가 포함된 함수는 `generator`가 된다.
 ```python
 def test():
@@ -671,9 +672,13 @@ foreach (var i in Test())
 }
 ```
 
-## Async / Await
+# Async / Await
+TDB
 
-## LINQ, comprehension?
+# LINQ, comprehension
+TDB
 
-## Reflection?
+# Reflection
+TDB
+
 
