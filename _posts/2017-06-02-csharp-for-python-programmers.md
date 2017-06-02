@@ -41,10 +41,10 @@ C#은 세미콜론을 사용해 명시적으로 구문을 구분하고 블럭은
 ```cs
 public void func()
 {
-	int foo = 1;
+    int foo = 1;
     if (foo == 1)
     {
-    	int bar = 2;
+        int bar = 2;
     }
 }
 ```
@@ -78,7 +78,7 @@ int answer = 42 /* mid-line comment */;
 # 함수 리턴 타입, 인자 타입 지정 없음
 def concat(first, second):
     return first + second
-    
+
 # 변수 타입 지정 없음
 question = "what is the answer of the life, universe and everything?"
 answer = "42"
@@ -116,18 +116,18 @@ Python
 if question is not "" and answer is "42":
     return True
 else:
-	return False
+    return False
 ```
 
 C#
 ```cs
 if (question != "" && answer == "42")
 {
-	return true;
+    return true;
 }
 else
 {
-	return false;
+    return false;
 }
 ```
 
@@ -135,22 +135,22 @@ else
 Python
 ```python
 for i in range(0, 10):
-	print(i)
+    print(i)
 
 for item in items:
-	print(item)
+    print(item)
 ```
 
 C#
 ```cs
-for (var i = 0; i < 10; i++)
+for (var i = 0; i< 10; i++)
 {
-	Console.WriteLine(i);
+    Console.WriteLine(i);
 }
 
 foreach (var item in items)
 {
-	Console.WriteLine(item);
+    Console.WriteLine(item);
 }
 ```
 
@@ -159,30 +159,30 @@ foreach (var item in items)
 Python
 ```python
 try:
-	if not open():
+    if not open():
         raise Exception()
 except Exception as e:
-	print(e)
+    print(e)
 finally:
-	close()
+    close()
 ```
 
 C#
 ```cs
 try
 {
-	if (!Open())
+    if (!Open())
     {
-    	throw new Exception();
+        throw new Exception();
     }
 }
 catch (NullReferenceException e)
 {
-	Console.WriteLine(e);
+    Console.WriteLine(e);
 }
 finally
 {
-	Close();
+    Close();
 }
 ```
 
@@ -201,13 +201,13 @@ any_list = [1, "str", Foo, Foo.bar()]
 
 C# Array는 크기가 고정이다.
 ```cs
-int[] item_array = {1, 2, 3};
+int[] item_array = { 1, 2, 3};
 int first_item = item_array[0];
 ```
 
 C# List는 원소 타입을 지정한다.
 ```cs
-List<int> itemList = new List<int> [1, 2, 3];
+List<int> itemList = new List<int>[1, 2, 3];
 int firstItem = itemList[0];
 ```
 
@@ -247,40 +247,40 @@ Dictionary<int, string> tempDict = new Dictionary<int, string>
 
 Python Class
 ```python
-class MyClass:
-	class_variable = 'my_class'
+class MyClass :
+    class_variable = 'my_class'
 
 
-	# 생성자
+    # 생성자
     def __init__(self):
-    	# 인스턴스 변수에 self로 접근, 미리 선언할 필요 없음
-    	self.instance_variable = 'default'
+        # 인스턴스 변수에 self로 접근, 미리 선언할 필요 없음
+        self.instance_variable = 'default'
 
 
     def hello(self, name):
-    	self.instance_variable = name
-    	return 'hello world'
+        self.instance_variable = name
+        return 'hello world'
 ```
 
 C# Class
 ```cs
 namespace SandBox
 {
-	public class MyClass
+    public class MyClass
     {
-    	string instanceVariable;
+        string instanceVariable;
 
         // 생성자
         public MyClass()
         {
-        	instanceVariable = "default";
+            instanceVariable = "default";
         }
 
 
-    	public string Func(string name)
+        public string Func(string name)
         {
-        	instanceVariable = name;
-        	return "hello world";
+            instanceVariable = name;
+            return "hello world";
         }
     }
 }
@@ -292,16 +292,16 @@ C#에는 `interface` 키워드를 사용해서 인터페이스를 정의할 수 
 ```cs
 public interface ISpeakable
 {
-	string Speak();
+    string Speak();
 }
 
 public class Dog : ISpeakable
 {
-	string name = "Dog";
+    string name = "Dog";
 
     public string Speak()
     {
-    	return "Bark!";
+        return "Bark!";
     }
 }
 ```
@@ -312,16 +312,16 @@ C#은 `abstract` 한정자를 제공하여 추상 클래스와 추상 메서드�
 ```cs
 abstract class ShapesClass
 {
-	abstract public int Area();
+    abstract public int Area();
 }
 
 class Square : ShapesClass
 {
-	int side = 0;
+    int side = 0;
 
-	public override int Area()
+    public override int Area()
     {
-    	return side * side;
+        return side * side;
     }
 }
 ```
@@ -330,19 +330,19 @@ C#은 `virtual` 키워드로 가상 메서드를 만들 수 있다. `virtual`로
 ```cs
 class BaseClass
 {
-	int num;
+    int num;
 
-	public virtual int Number()
+    public virtual int Number()
     {
-    	return num;
+        return num;
     }
 }
 
 class DerivedClass : BaseClass
 {
-	public override int Number()
+    public override int Number()
     {
-    	return num + 1;
+        return num + 1;
     }
 }
 ```
@@ -353,17 +353,17 @@ C#에는 class와 구분되는 struct가 있다.
 ```cs
 public struct CoOrds
 {
-	public int x, y;
+    public int x, y;
 
     public CoOrds(int p1, p2)
     {
-    	x = p1;
+        x = p1;
         y = p2;
     }
 }
 ```
 
-구조체에 대해 매개 변수가 없는 기본 생성자를 정의하면 오류가 발생한다. 구조체 본문에서 인스턴스 필드를 초기화해도 오류가 발생한다. 구조체의 멤버는 매개 변수가 있는 생성자를 사용하거나 구조체가 선언된 후 멤버에 개별적으로 액세스하는 방법으로만 초기화할 수 있다.
+구조체에 대해 매개 변수가 없는 기본 생성자를 정의하면 오류가 발생한다.구조체 본문에서 인스턴스 필드를 초기화해도 오류가 발생한다. 구조체의 멤버는 매개 변수가 있는 생성자를 사용하거나 구조체가 선언된 후 멤버에 개별적으로 액세스하는 방법으로만 초기화할 수 있다.
 
 클래스와 달리 다른 구조체나 클래스를 상속할 수 없다.
 
@@ -371,7 +371,7 @@ public struct CoOrds
 
 # Value Types vs. Reference Types
 
-값 형식을 기반으로 한 변수에는 값이 직접 포함된다. 값 형식 변수 하나를 다른 변수에 대입하면 값 자체의 복사가 일어난다. 참조 형식 변수의 경우 참조만 복사되는 것과 대비된다.
+값 형식을 기반으로 한 변수에는 값이 직접 포함된다.값 형식 변수 하나를 다른 변수에 대입하면 값 자체의 복사가 일어난다. 참조 형식 변수의 경우 참조만 복사되는 것과 대비된다.
 
 structs, enumerations, numeric types, bool 등이 값 형식이다.
 class, interface, delegate, dynamic, object, string 등이 참조 형식이다.
@@ -419,50 +419,50 @@ class TestBoxing
 # Property
 Python은 `property`라는 built-in function을 제공한다.
 ```python
-class C:
-	def __init__(self):
-    	self._x = None
+class C :
+    def __init__(self):
+        self._x = None
 
-	def getx(self):
-    	return self._x
+    def getx(self):
+        return self._x
 
-	def setx(self, value):
-    	self._x = value
+    def setx(self, value):
+        self._x = value
 
     def delx(self):
-    	del self._x
+        del self._x
 
-	x = property(getx, setx, delx, "I'm the x property.")
+    x = property(getx, setx, delx, "I'm the x property.")
 ```
 
 데코레이터 형태로 사용하는 것이 일반적이다.
 ```python
-class C:
-	def __init__(self):
-    	self._x = None
+class C :
+    def __init__(self):
+        self._x = None
 
-	@property
+    @property
     def x(self):
-    	return self._x
+        return self._x
 
-	@x.setter
+    @x.setter
     def x(self, value):
-    	self._x = value
-    
+        self._x = value
+
     @x.deleter
     def x(self):
-    	del self._x
+        del self._x
 ```
 
 C#은 전용 문법을 제공한다.
 ```cs
 class C
 {
-	string _x;
+    string _x;
     
     public string x
     {
-    	get { return _x; }
+        get { return _x; }
         set { _x = value; }
     }
 }
@@ -472,7 +472,7 @@ C# 3 부터는 기본 속성 구현은 자동으로 할 수 있다.
 ```cs
 class C
 {
-	public string x { get; set; }
+    public string x { get; set; }
 }
 ```
 
@@ -480,7 +480,7 @@ C# 6 부터는 읽기 전용 속성에서 get 접근자를 키워드 없이 본�
 ```cs
 class C
 {
-	string firstName;
+    string firstName;
     string lastName;
 
     public string Name => $"{firstName} {lastName}";
@@ -505,10 +505,10 @@ C#의 Lambda는 `=>` 연산자를 사용한다.
 Python에서는 추가적인 코드 없이 함수를 인자로 넘기거나 리턴으로 넘길 수 있다.
 ```python
 def my_adder(x, y):
-	return x + y
+    return x + y
 
 def executor(func, arg1, arg2):
-	return func(arg1, arg2)
+    return func(arg1, arg2)
 
 executor(my_adder, 1, 2)
 ```
@@ -521,12 +521,12 @@ public delegate int Func(int first, int second);
 // delegate와 시그너쳐가 동일한 함수 정의
 public int MyAdder(int first, int second)
 {
-	return first + second;
+    return first + second;
 }
 
 public int Executor(Func func, int arg1, int arg2)
 {
-	return func(arg1, arg2);
+    return func(arg1, arg2);
 }
 
 Executor(new Func(MyAdder), 1, 2);
@@ -538,7 +538,7 @@ C#에서는 `out`, `ref` 키워드로 매개변수를 참조로 전달할 수 �
 ```cs
 void Adder(ref int value)
 {
-	value += 1;
+    value += 1;
 }
 
 int value = 10;
@@ -549,7 +549,7 @@ Adder(ref value);
 ```cs
 void Setter(out int value)
 {
-	value = 1;
+    value = 1;
 }
 
 int value = 0;
@@ -563,7 +563,7 @@ Python은 keyword argement를 지원한다. 이 기능을 통해 가독성을 �
 
 ```python
 def func(a, b, c, d):
-	print(a, b, c, d)
+    print(a, b, c, d)
 
 func(a=1, b=2, c=3, d=4)
 ```
@@ -571,7 +571,7 @@ func(a=1, b=2, c=3, d=4)
 여러 개의 keyword argument를 **을 이용해서 한번에 받을 수도 있다.
 ```python
 def func(**kwargs):
-	print(kwargs['a'], kwargs['b'])
+    print(kwargs['a'], kwargs['b'])
 
 
 func(a=1, b=2, c=3, d=4)
@@ -580,7 +580,7 @@ func(a=1, b=2, c=3, d=4)
 매개 변수 이름을 지정함으로써 순서에 상관없이 선택적으로 매개변수를 넘길 수 있다.
 ```python
 def func(a, b, c=10, d=20, e=30):
-	print(a, b, c, d, e)
+    print(a, b, c, d, e)
 
 # c와 d는 default값을 사용하고 e만 지정하고 싶은 경우
 func(0, 1, e=100)
@@ -590,7 +590,7 @@ C#에서도 동일한 기능을 지원하고 있다.
 ```cs
 public int CalcBMI(int weight, int height)
 {
-	// ...
+    // ...
 }
 
 int bmi = CalcBMI(weight: 60, height: 180);
@@ -607,7 +607,7 @@ int bmi = CalcBMI(height: 180, weight: 60);
 ```cs
 public int CalcBMI(int weight = 60, int height = 180)
 {
-	// ...
+    // ...
 }
 
 // weight는 default값을 사용하고 height만 185로 넘겨주고 싶은 경우
@@ -627,11 +627,11 @@ C#은 명시적으로 namespce를 지정한다.
 ```cs
 namespace SampleNamespace
 {
-	class SampleClass
+    class SampleClass
     {
-    	public void Method()
+        public void Method()
         {
-        	// ...
+            // ...
         }
     }
 }
@@ -649,12 +649,12 @@ SampleClass.Method();
 Python은 `yield` 가 포함된 함수는 `generator`가 된다.
 ```python
 def test():
-	for i in range(10):
-    	yield i
+    for i in range(10):
+        yield i
 
 
 for res in test():
-	print(res)
+    print(res)
 ```
 
 C#은 `yield break` 혹은 `yield return`을 이용해서 비슷한 동작을 할 수 있고 `IEnumerable`가 된다.
@@ -663,7 +663,7 @@ public IEnumerable<int> Test()
 {
     for (var i = 0; i < 10; ++i)
     {
-        yield return i;	
+        yield return i;    
     }
 }
 foreach (var i in Test())
