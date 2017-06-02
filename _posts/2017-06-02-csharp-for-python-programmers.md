@@ -4,9 +4,12 @@ title: C# for Python Programmers
 ---
 
 한동안 Python을 주 언어로 사용해오다가 앞으로 C#도 필요하게 되어 Python을 기준으로 C#이 다른 점들을 정리해보았다.
-Microsoft [C# 프로그래밍 가이드](https://docs.microsoft.com/ko-kr/dotnet/csharp/programming-guide/)를 주로 참고 하였다.
+Microsoft의 공식 문서인 [C# 프로그래밍 가이드](https://docs.microsoft.com/ko-kr/dotnet/csharp/programming-guide/)를 주로 참고 하였다.
 
-# Hello World
+
+# Hello C\#
+모든 것은 헬로월드로 부터.
+
 Python
 ```python
 if __name__ == "__main__":
