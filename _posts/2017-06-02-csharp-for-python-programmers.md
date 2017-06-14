@@ -7,8 +7,8 @@ title: C# for Python Programmers
 Microsoft의 공식 문서인 [C# 프로그래밍 가이드](https://docs.microsoft.com/ko-kr/dotnet/csharp/programming-guide/)를 주로 참고 하였다.
 
 
-# Hello C\#
-모든 것은 헬로월드로 부터.
+# Hello World
+
 
 Python
 ```python
