@@ -674,13 +674,58 @@ foreach (var i in Test())
 }
 ```
 
-# Async / Await
-TDB
-
 # LINQ, comprehension
-TDB
 
-# Reflection
-TDB
+C#은 LINQ(Language Integrated Query)라는 쿼리 기능을 제공한다.
+
+```cs
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+class app {
+  static void Main() {
+    string[] names = { "Burke", "Connor", "Frank", 
+                       "Everett", "Albert", "George", 
+                       "Harris", "David" };
+
+    IEnumerable<string> query = from s in names 
+                               where s.Length == 5
+                               orderby s
+                               select s.ToUpper();
+
+    foreach (string item in query)
+      Console.WriteLine(item);
+  }
+}
+```
+
+이 프로그램을 실행하면, 다음과 같은 출력을 얻을 수 있다.
+
+```
+BURKE
+DAVID
+FRANK
+```
+
+
+Lambda나 delegate를 사용해서 메서드 방식으로도 쿼리할 수 있다.
+
+```cs
+IEnumerable<string> query = names
+	.Where(name => name.Length == 5)
+	.OrderBy(name => name)
+	.Select(name => name.ToUpper());
+```
+
+
+Python에서는 comprehension을 사용해서 유사한 코드를 작성할 수 있다.
+
+```python
+names = ["Burke", "Connor", "Frank", "Everett", "Albert", "George", "Harris", "David"]
+query = sorted([s.upper() for s in names if len(s) == 5])
+for s in query:
+    print(s)
+```
 
 
