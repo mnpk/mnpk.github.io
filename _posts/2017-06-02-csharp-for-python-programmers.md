@@ -701,3 +701,88 @@ for s in query:
 ```
 
 
+
+# Reflection
+
+C#에서는 reflection을 사용해서 어셈블리, 모듈 및 타입을 설명하는 `Type` 타입의 오브젝트를 가져올 수 있다.
+타입의 인스턴스를 동적으로 만들거나, 타입을 기존 오브젝트에 바인딩하거나, 기존 오브젝트에서 형식을 가져오고 해당 메서드를 호출하거나 해당 필드와 속성에 액세스할 수 있다.
+코드에서 attribute를 사용하는 경우 reflection을 통해 해당 attribute에 접근할 수 있다.
+
+```cs
+// Using GetType to obtain type information:  
+int i = 42;  
+System.Type type = i.GetType();  
+System.Console.WriteLine(type);
+
+// 출력:
+// System.Int32
+```
+
+문서에 따르면 reflection의 일반적인 용도는 다음과 같다.
+
+- Assembly를 사용하여 어셈블리를 정의 및 로드하고, 어셈블리 매니페스트에 나열된 모듈을 로드하고, 이 어셈블리에서 형식을 찾아 해당 인스턴스를 만듭니다.
+- Module을 사용하여 모듈 및 모듈의 클래스가 포함된 어셈블리와 같은 정보를 검색합니다. 모듈에 정의된 모든 전역 메서드나 기타 특정 비전역 메서드를 가져올 수도 있습니다.
+- ConstructorInfo를 사용하여 생성자의 이름, 매개 변수, 액세스 한정자(예: public 또는 private), 구현 세부 정보(예: abstract 또는 virtual)와 같은 정보를 검색합니다. Type의 GetConstructors 또는 GetConstructor 메서드를 사용하여 특정 생성자를 호출합니다.
+- MethodInfo를 사용하여 메서드의 이름, 반환 형식, 매개 변수, 액세스 한정자(예: public 또는 private), 구현 세부 정보(예: abstract 또는 virtual)와 같은 정보를 검색합니다. Type의 GetMethods 또는 GetMethod 메서드를 사용하여 특정 메서드를 호출합니다.
+- FieldInfo를 사용하여 필드의 이름, 액세스 한정자(예: public 또는 private), 구현 세부 정보(예: static)를 검색하고 필드 값을 가져오거나 설정합니다.
+- EventInfo를 사용하여 이벤트의 이름, 이벤트 처리기 데이터 형식, 사용자 지정 특성, 선언 형식, 리플렉션 형식과 같은 정보를 검색하고 이벤트 처리기를 추가하거나 제거합니다.
+- PropertyInfo를 사용하여 속성의 이름, 데이터 형식, 선언 형식, 리플렉션 형식, 읽기 전용/쓰기 가능 상태와 같은 정보를 검색하고 속성 값을 가져오거나 설정합니다.
+- ParameterInfo를 사용하여 매개 변수 이름, 데이터 형식, 매개 변수가 입력 또는 출력 매개 변수인지 여부, 메서드 서명에서 매개 변수의 위치와 같은 정보를 검색합니다.
+- CustomAttributeData를 사용하여 응용 프로그램 도메인의 리플렉션 전용 컨텍스트에서 작업할 때 사용자 지정 특성에 대한 정보를 검색합니다. CustomAttributeData를 사용하면 특성 인스턴스를 만들지 않고 특성을 검사할 수 있습니다.
+
+
+Python은 동적 언어이기 때문에 reflection 개념이 없고 타입, 메서드, 필드 정보 등은 자연스럽게 접근 가능하다.
+
+
+# Attribute
+
+C#은 Attribuute 기능을 지원한다.'[', ']'를 사용한다.
+
+```cs
+[Custom("I'm custom attribute of Foo!")]
+class Foo
+{
+}
+```
+
+Custom Attribute 선언과 적용 예제는 다음과 같다.
+
+```cs
+using System;
+
+class CustomAttribute: Attribute
+{
+	string name;
+
+	public CustomAttribute(string name)
+	{
+		this.name = name;
+	}
+
+	public override string ToString()
+	{
+		return name;
+	}
+}
+
+[Custom("I'm custom attribute of Foo!")]
+class Foo
+{
+}
+```
+	
+적용된 특성에 접근하려면 reflection을 사용해야한다.
+
+```cs
+using System.Reflection;
+using System.Linq;
+
+MemberInfo info = typeof(Foo);
+Attribute attribute = info.GetCustomAttributes().First();
+Console.WriteLine(attribute.GetType());
+Console.WriteLine(attribute);
+
+// 출력
+// CustomAttribute
+// I'm custom attribute of Foo!
+```
