@@ -64,10 +64,11 @@ else:
     return False
 
 	
-# for문
+# for
 for i in range(0, 10):
     print(i)
 
+# for로 컨테이너 순환
 for item in items:
     print(item)
 
@@ -127,12 +128,13 @@ else
 }
 
 
-// for, foreach
+// for
 for (var i = 0; i< 10; i++)
 {
     Console.WriteLine(i);
 }
 
+// foreach
 foreach (var item in items)
 {
     Console.WriteLine(item);
