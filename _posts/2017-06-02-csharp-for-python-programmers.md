@@ -30,136 +30,49 @@ class Hello
 
 # 기본 문법
 
-## 블럭, 구문 구분
-Python은 줄바꿈이 곧 구문 구분이고 들여쓰기로 블럭을 구분한다.
+Python
 ```python
+# Python은 #으로 코멘트
+
+'''
+따옴표 3개를 이용해
+여러 줄을 코멘트
+'''
+
+# Python은 줄바꿈이 곧 구문 구분이고 들여쓰기로 블럭을 구분
 def func():
     foo = 1
     if foo == 1:
         bar = 2
-```
-
-C#은 세미콜론을 사용해 명시적으로 구문을 구분하고 블럭은 중괄호로 감싼다.
-```cs
-public void func()
-{
-    int foo = 1;
-    if (foo == 1)
-    {
-        int bar = 2;
-    }
-}
-```
-
-## 코멘트
-Python은 #으로 코멘트한다. '''을 이용해 여러 줄을 코멘트할 수 있다.
-```python
-# comment
-'''
-block
-comment
-'''
-answer = 42
-```
-
-C#은 //로 코멘트한다. /* */을 이용해 여러 줄 혹은 한 줄의 가운데 특정 부분을 코멘트 할 수 있다.
-
-```cs
-// comment
-/*
-   block
-   comment
-*/
-
-int answer = 42 /* mid-line comment */;
-```
-
-
-## 타입 지정
-```python
+		
+		
 # 함수 리턴 타입, 인자 타입 지정 없음
 def concat(first, second):
     return first + second
 
+
 # 변수 타입 지정 없음
 question = "what is the answer of the life, universe and everything?"
 answer = "42"
-
 result = concat(question, answer)
 
-```
 
-```cs
-// 함수 리턴 타입, 인자 타입 지정
-string Concat(string first, string second)
-{
-    return first + second;
-}
-
-// 변수 타입 지정
-string question = "what is the answer of the life, universe and everything?";
-string answer = "42";
-
-string result = Concat(question, answer);
-```
-
-C#에서도 선언과 동시에 값을 할당하는 경우 `var`키워드를 사용하여 타입 지정을 생략할 수 있다.
-```cs
-var question = "what is the answer of the life, universe and everything?";
-var answer = "42";
-var result = Concat(question, answer);
-```
-
-## 흐름 제어
-
-### if
-Python
-```python
+# if문
 if question is not "" and answer is "42":
     return True
 else:
     return False
-```
 
-C#
-```cs
-if (question != "" && answer == "42")
-{
-    return true;
-}
-else
-{
-    return false;
-}
-```
-
-### for
-Python
-```python
+	
+# for문
 for i in range(0, 10):
     print(i)
 
 for item in items:
     print(item)
-```
 
-C#
-```cs
-for (var i = 0; i< 10; i++)
-{
-    Console.WriteLine(i);
-}
-
-foreach (var item in items)
-{
-    Console.WriteLine(item);
-}
-```
-
-### exception
-
-Python
-```python
+	
+# exception
 try:
     if not open():
         raise Exception()
@@ -169,8 +82,64 @@ finally:
     close()
 ```
 
+
 C#
+
 ```cs
+// C#은 //로 코멘트
+/* 을 이용해 여러 줄 혹은 한 줄의 가운데 특정 부분을 코멘 */ 
+// C#은 세미콜론을 사용해 명시적으로 구문을 구분하고 블럭은 중괄호
+public void func()
+{
+    int foo = 1;
+    if (foo == 1)
+    {
+        int bar = 2;
+    }
+}
+
+
+// 함수 리턴 타입, 인자 타입 지정
+string Concat(string first, string second)
+{
+    return first + second;
+}
+
+// 변수 타입 지정
+string question = "what is the answer of the life, universe and everything?";
+string answer = "42";
+string result = Concat(question, answer);
+
+// 선언과 동시에 값을 할당하는 경우 `var`키워드를 사용하여 타입 지정을 생략 가능
+var question = "what is the answer of the life, universe and everything?";
+var answer = "42";
+var result = Concat(question, answer);
+
+
+// if
+if (question != "" && answer == "42")
+{
+    return true;
+}
+else
+{
+    return false;
+}
+
+
+// for, foreach
+for (var i = 0; i< 10; i++)
+{
+    Console.WriteLine(i);
+}
+
+foreach (var item in items)
+{
+    Console.WriteLine(item);
+}
+
+
+// exception
 try
 {
     if (!Open())
@@ -188,9 +157,10 @@ finally
 }
 ```
 
+
 # Array, List, Tuple, Dictionary
 
-Python은 배열을 잘 사용하지 않고 list를 사용한다
+Python은 배열을 잘 사용하지 않고 list를 사용한다.
 ```python
 item_list = [1, 2, 3]
 first_item = item_list[0]
@@ -350,7 +320,7 @@ class DerivedClass : BaseClass
 ```
 
 
-# Structure
+# Struct
 C#에는 class와 구분되는 struct가 있다.
 ```cs
 public struct CoOrds
