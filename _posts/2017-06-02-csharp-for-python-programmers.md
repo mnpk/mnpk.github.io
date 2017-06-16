@@ -736,7 +736,7 @@ Python은 동적 언어이기 때문에 reflection 개념이 없고 타입, 메�
 
 # Attribute
 
-C#은 Attribuute 기능을 지원한다.'[', ']'를 사용한다.
+C#은 Attribuute 기능을 지원한다.`[`, `]`를 사용한다.
 
 ```cs
 [Custom("I'm custom attribute of Foo!")]
