@@ -162,42 +162,21 @@ finally
 
 # Array, List, Tuple, Dictionary
 
-Python은 배열을 잘 사용하지 않고 list를 사용한다.
+Python
+
 ```python
+# Python은 배열을 잘 사용하지 않고 list를 사용한다.
 item_list = [1, 2, 3]
 first_item = item_list[0]
-```
 
-Python list는 타입 종류에 상관없이 담을 수 있다.
-```python
+
+# Python list는 타입 종류에 상관없이 담을 수 있다.
 any_list = [1, "str", Foo, Foo.bar()]
-```
 
-C# Array는 크기가 고정이다.
-```cs
-int[] item_array = { 1, 2, 3};
-int first_item = item_array[0];
-```
-
-C# List는 원소 타입을 지정한다.
-```cs
-List<int> itemList = new List<int>[1, 2, 3];
-int firstItem = itemList[0];
-```
-
-Python은 콤마로 구분하여 나열하면 tuple이다.
-```python
+# Python은 콤마로 구분하여 나열하면 tuple이다.
 sample_tuple = (1, "two", 3.0)
-```
 
-C#은 타입을 지정한다.
-```cs
-var sampleTuple = new Tuple<int, string, float>(1, "two", 3.0f);
-```
-
-
-Python dictionary 별도의 타입 지정이 필요없고 타입을 섞어서 쓸 수 있다.
-```python
+# Python dictionary는 별도의 타입 지정이 필요없고 타입을 섞어서 쓸 수 있다.
 item_dict = {
     'first': 1,
     2: ['list'],
@@ -207,8 +186,21 @@ first_value = item_dict['first']
 second_value = item_dict[2]
 ```
 
-C# Dictionary는 타입을 지정해야 한다.
+C#
+
 ```cs
+// C# Array는 크기가 고정이다.
+int[] item_array = { 1, 2, 3};
+int first_item = item_array[0];
+
+// C# List는 원소 타입을 지정한다.
+List<int> itemList = new List<int>[1, 2, 3];
+int firstItem = itemList[0];
+
+// C#은 Tuple은 타입을 지정한다.
+var sampleTuple = new Tuple<int, string, float>(1, "two", 3.0f);
+
+// C# Dictionary는 타입을 지정해야 한다.
 Dictionary<int, string> tempDict = new Dictionary<int, string>
 {
     { 1, "first" },
