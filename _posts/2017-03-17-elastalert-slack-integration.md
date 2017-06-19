@@ -119,8 +119,6 @@ alert_time_limit:
   days: 2
 ```
 
-나의 경우에는 `es_host`만 수정하였다.
-그리고 config.yaml로 저장.
 
 
 ## Rule 설정
