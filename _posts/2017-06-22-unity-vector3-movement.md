@@ -2,14 +2,13 @@
 layout: post
 title: Unity3D Vector3 MoveTowards vs. Lerp vs. Slerp vs. SmoothDamp
 ---
-
-![](http://i.imgur.com/FeKRE1c.gif)
+Unity에서 한 점을 다른위치로 점차적으로 옮길 수 있는 방법은 여러가지가 있다. 그 중 `MoveTowards`, `Lerp`, `Slerp`, `SmoothDamp`에 대해 정리해보자.
 
 
 # Vector3.MoveToward
 https://docs.unity3d.com/ScriptReference/Vector3.MoveTowards.html
 
-```
+```cs
 public static Vector3 MoveTowards(Vector3 current, Vector3 target, float maxDistanceDelta);
 ```
 
@@ -26,7 +25,7 @@ maxDistanceDelta에 deltaTime에 비례하는 값을 넣으면 시간에 따라 
 
 # Vector3.Lerp
 https://docs.unity3d.com/ScriptReference/Vector3.Lerp.html
-```
+```cs
 public static Vector3 Lerp(Vector3 a, Vector3 b, float t);
 ```
 
@@ -49,7 +48,7 @@ a에 현재위치, b에 목표위치, t를 deltaTime에 비례하는 값을 넣�
 # Vector3.Slerp
 
 https://docs.unity3d.com/ScriptReference/Vector3.Slerp.html
-```
+```cs
 public static Vector3 Slerp(Vector3 a, Vector3 b, float t);
 ```
 
@@ -76,7 +75,7 @@ Slerp(현재 위치, 목표위치, deltaTime * 비율) 형태로 사용하게 �
 
 # Vector3.SmoothDamp
 https://docs.unity3d.com/ScriptReference/Vector3.SmoothDamp.html
-```
+```cs
 public static Vector3 SmoothDamp(Vector3 current, Vector3 target, ref Vector3 currentVelocity, float smoothTime, float maxSpeed = Mathf.Infinity, float deltaTime = Time.deltaTime);
 ```
 
