@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Unity3D Vector3 MoveTowards vs. Lerp vs. Slerp vs. SmoothDamp
+publish: false
 ---
 Unity에서 한 점을 다른위치로 점차적으로 옮길 수 있는 방법은 여러가지가 있다. 그 중 `MoveTowards`, `Lerp`, `Slerp`, `SmoothDamp`에 대해 정리해보자.
 
