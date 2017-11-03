@@ -8,7 +8,7 @@ title: bash on ubuntu on windows 10 폰트와 컬러 변경
 
 windows 10에서 bash를 깔고 나서 폰트와 컬러를 바꾸고 싶었으나 아무리 바꿔도 저장이 되지 않고 다시 켜면 원래 굴림체로 돌아가는 현상이 있었다.
 
-bash를 실행하는 방법에 따라서 폰트나 컬러 설정을 가져오는 레지스트리 위치가 다른데 Win + R > bash 로 켤 경우 `HKEY_USERS\S-1-5-21-555200176-2817983154-709514845-27452\Console\%SystemRoot%_system32_bash.exe` 아래에서 설정을 가져온다.
+bash를 실행하는 방법에 따라서 폰트나 컬러 설정을 가져오는 레지스트리 위치가 다른데 Win + R > bash 로 켤 경우 `HKEY_CURRENT_USER\Console\%SystemRoot%_system32_bash.exe` 아래에서 설정을 가져온다.
 
 하지만 bash.exe에 문제가 있어서 codepage가 한글(CP949)로 되어 있을 경우 폰트/컬러 설정이 저장되지 않는다.(관련 github issue https://github.com/Microsoft/WSL/issues/757)
 
@@ -19,10 +19,7 @@ CodePage 설정과 함께 Ubuntu Mono폰트, Ubuntu bash 컬러를 셋팅한 레
 
 ```
 Windows Registry Editor Version 5.00
-[HKEY_USERS\S-1-5-21-555200176-2817983154-709514845-27452\Console\%SystemRoot%_system32_bash.exe]
-"InsertMode"=dword:00000000
-"ScreenBufferSize"=dword:23290075
-"WindowSize"=dword:00380075
+[HKEY_CURRENT_USER\Console\%SystemRoot%_system32_bash.exe]
 "FaceName"="Ubuntu Mono"
 "WindowAlpha"=dword:000000ff
 "ColorTable00"=dword:00240a30
