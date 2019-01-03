@@ -4,8 +4,8 @@
 #permalink:           pretty
 
 # Setup
-title:               mp
-tagline:             'archive'
+title:               Jay archive
+tagline:             ''
 description:         ''
 url:                 http://mnpk.github.io
 baseurl:             ''
@@ -13,7 +13,7 @@ paginate:            5
 
 # About/contact
 author:
-  name:              mnpk
+  name:              Jay
   url:               https://mnpk.github.io/
   email:             mnncat@gmail.com
 
@@ -21,6 +21,6 @@ author:
 version:             1.0.0
 
 # gem required
-gems:
+plugins:
   - jekyll-feed
   - jekyll-paginate
