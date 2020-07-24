@@ -10,9 +10,10 @@ title: "About"
 AI / Natural Language Processing / Python  
 Jeju :kr:  
 
+<br>
 <a href="https://github.com/mnpk" target="_blank"><i class="fab fa-github"></i> /mnpk</a>  
 <a href="https://github.com/mnpk" target="_blank"><i class="fab fa-twitter"></i> @minwoo___park</a>  
-<a href="https://github.com/mnpk" target="_blank"><i class="far fa-envelope"></i> mnncat@gmail.com</a>  
+<a href="mailto:mnncat@gmail.com" target="_blank"><i class="far fa-envelope"></i> mnncat@gmail.com</a>  
 
 
 
