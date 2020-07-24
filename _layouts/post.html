@@ -1,27 +1,33 @@
 ---
 layout: default
 ---
+
 <div class="post">
+  <div class="post-info">
+    {% if page.date %}
+      <time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    {% endif %}
+  </div>
+
+  {% if page.title %}
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+  <div class="post-line"></div>
+  {% endif %}
+
   {{ content }}
 </div>
 
-<div class="fb-like" data-href="http://mnpk.github.io{{page.url}}" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
-<div class="fb-comments" data-href="http://mnpk.github.io{{page.url}}" data-width="720" data-numposts="5"></div>
+{% if page.comments %}
+  {% include disqus_comments.html %}
+{% endif %}
 
-<div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
+<div class="pagination">
+  {% if page.next.url %}
+    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
+  {% endif %}
+  {% if page.previous.url %}
+    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+  {% endif %}
+
+  <a href="#" class="top">Top</a>
 </div>

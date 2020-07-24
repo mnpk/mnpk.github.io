@@ -1,6 +1,7 @@
 ---
 layout: post
 title: (번역) 더 나은 개발자가 되는 8 가지 방법
+published: false
 ---
 
 > 이 글은 NewRelic 블로그의 [“8 Ways to Become a Better Coder”](https://blog.newrelic.com/2016/02/22/8-ways-become-a-better-coder/) 라는 글의 한글 번역입니다. 오역이 있을 수 있습니다.

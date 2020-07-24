@@ -1,4 +1,0 @@
----
-layout: slides
-title: Slides
----

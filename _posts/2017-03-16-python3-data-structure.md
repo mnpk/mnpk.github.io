@@ -1,6 +1,7 @@
 ---
 layout: post
 title: (번역) Python 3 에서 주목할 만한 새로운 자료구조들
+published: false
 ---
 > 이 글은 [reddit/r/python](https://www.reddit.com/r/Python/comments/5zfsq4/new_interesting_data_structures_in_python_3/)에서 발견한 [글](https://github.com/topper-123/Articles/blob/master/New-interesting-data-types-in-Python3.rst)의 한글 번역입니다. 오역이 있을 수 있습니다.
 

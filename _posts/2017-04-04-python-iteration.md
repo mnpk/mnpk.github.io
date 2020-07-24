@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Python의 반복
+published: false
 ---
 > 이 글은 한빛미디어에서 출판된 [Fluent Python - 전문가를 위한 파이썬](http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=88728476)의 `14장 "반복형, 반복자, 제네레이터"` 부분을 발췌 정리한 내용입니다.
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: bash on ubuntu on windows 10 폰트와 컬러 변경
+published: false
 ---
 
 ![](https://i.imgur.com/SphGNdl.png)

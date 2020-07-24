@@ -1,26 +1,41 @@
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-#permalink:           pretty
+# Site settings
+title:          Minwoo Park
+description:    "test description"
+#baseurl:        "/tale"
+url:            "https://mnpk.github.io"
 
-# Setup
-title:               mp archive
-tagline:             ''
-description:         ''
-url:                 http://mnpk.github.io
-baseurl:             ''
-paginate:            5
+# Google Analytics
+google_analytics: UA—XXXXXXXX-X
 
-# About/contact
+# Author
 author:
-  name:              Jay
-  url:               https://mnpk.github.io/
-  email:             mnncat@gmail.com
+  name:         Minwoo Park
+  url:          https://mnpk.github.io
+  email:        mnncat@gmail.com
 
-# Custom vars
-version:             1.0.0
+# Build settings
+markdown:       kramdown
+include:
+  - _pages
 
-# gem required
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-seo-tag
+  - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       10
+
+# Excludes
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+
+# Disqus (Set to your disqus id)
+disqus:         jekyll-tale

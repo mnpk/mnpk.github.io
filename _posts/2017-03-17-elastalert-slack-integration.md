@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Elastalert + Slack 로그 알람 구축
+published: false
 ---
 
 흔히 ELK라고 부르는 [elastic](https://www.elastic.co/kr/)사의 제품 스택 ElasticSearch + LogStash + Kibaba 조합으로 로그 수집을 구축하면, 브라우저에서 Kibina를 통해 원하는 시간대의 데이터를 쿼리하고 시각화할 수 있고, 시각화한 데이터를 이용해 대시보드를 꾸미고 모니터링이 가능합니다.
