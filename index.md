@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Minwoo Park"
+title: "About"
 ---
 
 ![](https://mnpk.github.io/public/about.png)  

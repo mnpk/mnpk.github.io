@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Minwoo Park"
+title: "About"
 permalink: /about/
 ---
 
