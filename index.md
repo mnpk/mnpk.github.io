@@ -3,7 +3,7 @@ layout: post
 title: "About"
 ---
 
-![](https://mnpk.github.io/public/about.png)  
+![](https://mnpk.github.io/assets/about.png)  
 
 
 ### Machine Learning Engineer @ [Allganize](https://allganize.ai/)

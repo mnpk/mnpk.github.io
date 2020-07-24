@@ -4,7 +4,7 @@ title: "About"
 permalink: /about/
 ---
 
-![alt text](https://mnpk.github.io/public/about.png)
+![alt text](https://mnpk.github.io/assets/about.png)
 
 
 ### Machine Learning Engineer @ [Allganize](https://allganize.ai/)
